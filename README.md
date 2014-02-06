@@ -8,5 +8,7 @@ Checks every 10 seconds whether the VPN is enabled and if not, starts it up agai
 
 Checks the Daily Telegraph web page (usually via a cron job) to email out the latest Matt cartoon page.
 
+## PDF Pen
 
+To be called via Hazel to perform OCR on PDF documents downloaded
 
