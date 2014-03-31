@@ -10,5 +10,8 @@ Checks the Daily Telegraph web page (usually via a cron job) to email out the la
 
 ## PDF Pen
 
-To be called via Hazel to perform OCR on PDF documents downloaded
+To be called via Hazel to perform OCR on PDF documents downloaded.
 
+## Create OF task in Inbox
+
+Used in Mail.app and called via Mail ActOn to create a new task within OmniFocus along with the URL of the mail message in the notes field.
