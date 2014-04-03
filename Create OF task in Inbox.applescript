@@ -29,7 +29,6 @@ using terms from application "Mail"
 	tell application "OmniFocus"
 		tell front document
 			set _task to make new task with properties {name:thesubject, note:theurl}
-			«event OTREisal» {_task}
 			-- activate
 			-- Needs to select the Inbox view and then press tab - FIX REQUIRED
 			-- tell application "System Events" to keystroke tab
