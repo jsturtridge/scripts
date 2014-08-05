@@ -27,15 +27,17 @@ using terms from application "Mail"
 	set thesubject to replace_chars(thesubject, "fwd: ", "")
 	
 	tell application "OmniFocus"
-		tell front document
-			set _task to make new task with properties {name:thesubject, note:theurl}
-			-- activate
-			-- Needs to select the Inbox view and then press tab - FIX REQUIRED
-			-- tell application "System Events" to keystroke tab
+		tell quick entry
+			make new inbox task with properties {name:thesubject, note:theurl}
+			open
 		end tell
 	end tell
 	
+	-- Tab into subject line
 	
+	tell application "System Events"
+		keystroke tab
+	end tell
 	
 	--tell application "OmniFocus"
 	--	set theDoc to first document
